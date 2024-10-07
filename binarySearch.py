@@ -9,8 +9,8 @@ def binarySearch(nums, target):
     start = 0
     end = len(nums) - 1
     while start <= end:
-        mid = int((start+end)/2)
-
+        mid = int((start+end)/2) # Use this instead of a+b/2 in order to avoid overflow (eg 10^6 + 10^7)
+        
         if target > nums[mid]: # if the target is in the second half of the array, move the start pointer
             start = mid + 1
         elif target < nums[mid]: # if the target is in the first half of the array, move the end pointer
