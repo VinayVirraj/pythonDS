@@ -1,5 +1,6 @@
 
 def takeArrInput():
+    """This function takes a list as input"""
     try:
         return list(map(int, input("Enter your list separated by spaces or type 911 to quit: ").split()))
     except:
