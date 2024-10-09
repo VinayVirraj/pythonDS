@@ -28,9 +28,9 @@ def recursiveBinarySearch(nums, target, start, end):
     if nums[mid] == target:
         return mid
     elif target < nums[mid]:
-        return recursiveBinarySearch(nums, target, start, mid-1)
+        return recursiveBinarySearch(nums, target, start, mid-1) # call the function again if the mid is not found and target is in the left part of the array
     else:
-        return recursiveBinarySearch(nums, target, mid+1, end)
+        return recursiveBinarySearch(nums, target, mid+1, end) # call the function again if the mid is not found and target is in the right part of the array
 
 
 ex_arr = [-1,0,3,5,9,12]
