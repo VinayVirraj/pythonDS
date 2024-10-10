@@ -8,6 +8,7 @@ def findPages(self,n ,arr ,m):
             mid = start + (end - start)/2
             st = 1
             for i in range(n):
+                # add a condition here to verify if the condition is valid to iterate through the remaining array
                 if arr[i] + pages <= mid:
                     pages += arr[i]
                 else:
