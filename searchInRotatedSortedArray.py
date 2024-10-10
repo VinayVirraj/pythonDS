@@ -8,7 +8,7 @@ algorithm is applied on the rotated sorted array, one between the two halves wil
 def searchSortedArr(nums, target):
     start = 0
     end = len(nums) - 1
-    i = 0
+    i = 1
     while start <= end:
         print(f"\n/////////// iter {i} ///////////")
         print(f"Given list {nums}")
