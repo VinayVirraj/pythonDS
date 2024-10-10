@@ -1,3 +1,5 @@
+from inputs import takeInputAllocateMinPages
+
 # This function is to find the minimum among the maximum number of pages that can be allocated for a student from a given array containing pages of each book.
 
 def isvalid(m, n, arr, max_pages_allocation):
@@ -53,3 +55,8 @@ def findPages(n ,arr ,m):
             start = mid + 1
         i += 1 # just to know the iteration (not used in the function)
     return answer
+
+while True:
+    n, arr, m = takeInputAllocateMinPages()
+    print(f'\nYour Book Array : {arr}')
+    findPages(n, arr, m)
