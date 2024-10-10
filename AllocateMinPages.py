@@ -1,3 +1,5 @@
+# This function is to find the minimum of the maximum number of pages that can be allocated for a student from a given array of pages of each book.
+
 def findPages(self,n ,arr ,m):
         start = 0
         end = sum(arr)
