@@ -18,3 +18,16 @@ def takeInputAllocateMinPages():
         return n, l, m
     except:
         print('\nEnter valid values only')
+
+
+def takeInputAggrCows():
+    try:
+        l = []
+        n = int(input("\nEnter number of stalls: "))
+        for i in range(n):
+            stalls = int(input(f"Enter order number of stall {i+1}: "))
+            l.append(stalls)
+        m = int(input("Enter the number of Cows: "))
+        return n, l, m
+    except:
+        print('\nEnter valid values only')
